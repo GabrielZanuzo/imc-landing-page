@@ -1,0 +1,89 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <header>
+      
+        <img class="logo-header" src="assets/42e60410-f6fb-4940-8301-bf18921ed903_200x200.png" alt="">
+        <h1 class="header-h1">Calculadora de IMC</h1>
+    </header>
+    
+    <main>
+         <p class="main-p">Calcule o seu Índice de Massa Corpórea e veja dicas de acordo com o resultado. Basta preencher a calculadora com seu peso e altura.</p>
+            <h2 class="title-calc">Calculadora</h2>
+            <br>
+         <div class="container-calc">
+            <h2>Peso(kg) :</h2>
+            <input data-input-peso type="text" placeholder="Ex : 90">
+            <h2>Altura(m):</h2>   
+            <input data-input-altura type="text" placeholder="Ex : 1.60" >  
+            <div class="div-btn">
+            <button data-clean-button class="limpar-btn">LIMPAR</button>
+            <button data-calc-button class="calcular-btn">CALCULAR</button>
+        </div>
+         </div>    
+    </main>
+
+    <div class="div-resultado" >
+        <h2 data-resultado-h2></h2>
+        <p data-resultado-p></p>
+    </div> 
+    <h2 class="class-resultado" data-class-resultado></h2>
+    <h2 class="title-result">Entenda seu resultado</h2>
+
+    <footer class="footer" data-form-footer>
+        
+
+        <div>
+            <img class="footer-div01" id="img-01" src="assets/imc_01.png" alt="">
+            <h2>Acima de 40,0</h2>
+            <h1>Obesidade grau III</h1>
+            <p>Aqui o sinal é vermelho, com forte probabilidade de já existirem doenças muito graves associadas. O tratamento deve ser ainda mais urgente.</p>
+        </div>
+
+        <div>
+            <img class="footer-div02" id="img-02" src="assets/imc_02.png" alt="">
+            <h2>Entre 35,0 e 39,9</h2>
+            <h1>Obesidade grau II</h1>
+            <p>Mesmo que seus exames aparentem estar normais, é hora de se cuidar, iniciando mudanças no estilo de vida com o acompanhamento próximo de profissionais de saúde.</p>
+        </div>
+ 
+        <div>
+            <img class="footer-div03" id="img-03" src="assets/imc_03.png" alt="">
+            <h2>Entre 30,0 e 34,9</h2>
+            <h1>Obesidade grau I</h1>
+            <p>Sinal de alerta! Chegou na hora de se cuidar, mesmo que seus exames sejam normais. Vamos dar início a mudanças hoje! Cuide de sua alimentação. Você precisa iniciar um acompanhamento com nutricionista e/ou endocrinologista.</p>
+        </div>
+     
+        <div>
+            <img class="footer-div04" id="img-04" src="assets/imc_04.png" alt="">
+            <h2>Entre 25,0 e 29,9</h2>
+            <h1>Sobrepeso</h1>
+            <p>Ele é, na verdade, uma pré-obesidade e muitas pessoas nessa faixa já apresentam doenças associadas, como diabetes e hipertensão. Importante rever hábitos e buscar ajuda antes de, por uma série de fatores, entrar na faixa da obesidade pra valer.</p>
+        </div>
+
+        <div>
+            <img class="footer-div05" id="img-05" src="assets/imc_05.png" alt="">
+            <h2>Entre 18,6 e 24,9</h2>
+            <h1>Normal</h1>
+            <p>Que bom que você está com o peso normal! E o melhor jeito de continuar assim é mantendo um estilo de vida ativo e uma alimentação equilibrada.</p>
+        </div>
+
+        <div>
+            <img class="footer-div06" id="img-06" src="assets/imc_06.png" alt="">
+            <h2>18,5 ou menos</h2>
+            <h1>Abaixo do normal</h1>
+            <p>Procure um médico. Algumas pessoas têm um baixo peso por características do seu organismo e tudo bem. Outras podem estar enfrentando problemas, como a desnutrição. É preciso saber qual é o caso.</p>
+        </div>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
